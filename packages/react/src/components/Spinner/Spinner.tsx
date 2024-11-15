@@ -1,3 +1,4 @@
+import type { Color } from '@digdir/designsystemet-react/colors';
 import { useMergeRefs } from '@floating-ui/react';
 import cl from 'clsx/lite';
 import { type ComponentPropsWithoutRef, forwardRef } from 'react';
@@ -12,6 +13,10 @@ export type SpinnerProps = {
    * Spinner size
    */
   'data-size'?: '2xs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+  /**
+   * The color of the spinner. If left unspecified, the current text color (`currentColor`) is used.
+   */
+  'data-color'?: Color;
 } & ComponentPropsWithoutRef<'svg'> &
   (
     | { 'aria-label': string; 'aria-hidden'?: never }
