@@ -71,7 +71,7 @@ export const WithError: StoryFn<typeof Select> = (args) => (
       <Select.Option value='puncakjaya'>Puncak Jaya</Select.Option>
       <Select.Option value='kosciuszko'>Mount Kosciuszko</Select.Option>
     </Select>
-    <ValidationMessage>Velg et fjell</ValidationMessage>
+    <ValidationMessage>Du må velge et fjell</ValidationMessage>
   </Field>
 );
 
